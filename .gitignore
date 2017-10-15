@@ -31,5 +31,5 @@ ml/BoolServRaft.mli
 
 # Others
 *.bak
-Makefile
+Makefile.coq
 .DS_Store

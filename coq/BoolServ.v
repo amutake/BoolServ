@@ -140,3 +140,9 @@ Proof.
   rewrite star.
   apply one.
 Qed.
+
+Theorem step_1_star_trace_correct_with_initial_state :
+  forall st t, step_1_star init st t -> trace_correct init t.
+Proof.
+  apply/step_1_star_trace_correct.
+Qed.
