@@ -2,6 +2,7 @@
 *.vo
 *.glob
 *.v.d
+*.aux
 
 # OCaml
 *.a
