@@ -1,7 +1,9 @@
+(* original: https://github.com/uwplse/verdi-raft/blob/master/extraction/vard/ml/VarDArrangement.ml *)
+
 open Str
 open Printf
 open BoolServRaft
-open BoolServ
+(* open BoolServ *)
 open Util
 
 module type IntValue = sig

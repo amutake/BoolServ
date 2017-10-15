@@ -1,3 +1,5 @@
+(* original: https://github.com/uwplse/verdi-raft/blob/master/extraction/vard/ml/vard.ml *)
+
 open List
 open Printf
 open Str

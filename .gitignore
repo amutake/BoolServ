@@ -20,6 +20,10 @@
 *.mllib.d
 *.ml4.d
 /_build
+*.native
+
+# Python
+*.pyc
 
 # extraction
 ml/BoolServRaft.ml

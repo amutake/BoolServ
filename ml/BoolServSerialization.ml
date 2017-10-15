@@ -1,7 +1,9 @@
+(* original: https://github.com/uwplse/verdi-raft/blob/master/extraction/vard/ml/VarDSerialization.ml *)
+
 open Str
 open Printf
 open BoolServRaft
-open BoolServ
+(* open BoolServ *)
 open Util
 
 let serializeOutput out =
@@ -10,25 +12,8 @@ let serializeOutput out =
     | NotLeader (client_id, request_id) ->
        (client_id, sprintf "NotLeader %s" (string_of_int request_id))
     | ClientResponse (client_id, request_id, o) ->
-       let Response (k, value, old) = (Obj.magic o) in
-       (client_id,
-        match (value, old) with
-        | Some v, Some o -> sprintf "Response %s %s %s %s"
-                                    (string_of_int request_id)
-                                    (string_of_char_list k)
-                                    (string_of_char_list v)
-                                    (string_of_char_list o)
-        | Some v, None -> sprintf "Response %s %s %s -"
-                                  (string_of_int request_id)
-                                  (string_of_char_list k)
-                                  (string_of_char_list v)
-        | None, Some o -> sprintf "Response %s %s - %s"
-                                  (string_of_int request_id)
-                                  (string_of_char_list k)
-                                  (string_of_char_list o)
-        | None, None -> sprintf "Response %s %s - -"
-                                (string_of_int request_id)
-                                (string_of_char_list k))
+       let b = (Obj.magic o) in
+       (client_id, sprintf "Res %s %s" (string_of_int request_id) (string_of_bool b))
   in (cid, Bytes.of_string outStr)
 
 let deserializeInp i =
