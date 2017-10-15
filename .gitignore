@@ -19,6 +19,11 @@
 *.mli.d
 *.mllib.d
 *.ml4.d
+/_build
+
+# extraction
+ml/BoolServRaft.ml
+ml/BoolServRaft.mli
 
 # Others
 *.bak

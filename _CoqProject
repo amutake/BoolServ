@@ -1,12 +1,13 @@
--Q src BoolServ
+-Q coq BoolServ
 
-src/BoolServ.v
-src/BoolServRaft.v
-src/BoolServRaftCorrect.v
-src/BoolServRaftSerializers.v
-src/BoolServRaftLog.v
-src/BoolServRaftLogCorrect.v
-srv/BoolServRaftSerialized.v
-srv/BoolServRaftSerializedCorrect.v
-srv/BoolServRaftSerializedLog.v
-srv/BoolServRaftSerializedLogCorrect.v
+coq/BoolServ.v
+coq/BoolServRaft.v
+coq/BoolServRaftCorrect.v
+coq/BoolServRaftSerializers.v
+coq/BoolServRaftLog.v
+coq/BoolServRaftLogCorrect.v
+coq/BoolServRaftSerialized.v
+coq/BoolServRaftSerializedCorrect.v
+coq/BoolServRaftSerializedLog.v
+coq/BoolServRaftSerializedLogCorrect.v
+coq/ExtractBoolServRaft.v

@@ -1,7 +1,6 @@
 From Verdi     Require Import Verdi Log LogCorrect.
 From Cheerios  Require Import Cheerios.
-From VerdiRaft Require Import Raft CommonDefinitions Linearizability
-                              RaftLinearizableProofs EndToEndLinearizability.
+From VerdiRaft Require Import Raft CommonDefinitions Linearizability RaftLinearizableProofs EndToEndLinearizability.
 From BoolServ  Require Import BoolServ BoolServRaftLog.
 
 Section BoolServLogCorrect.
