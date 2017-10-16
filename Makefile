@@ -8,3 +8,6 @@ ml/BoolServ.ml: proof
 
 Makefile.coq:
 	./configure
+
+clean: Makefile.coq
+	$(MAKE) -f Makefile.coq clean

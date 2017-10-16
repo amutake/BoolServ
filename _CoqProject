@@ -3,11 +3,4 @@
 coq/BoolServ.v
 coq/BoolServRaft.v
 coq/BoolServRaftCorrect.v
-coq/BoolServRaftSerializers.v
-coq/BoolServRaftLog.v
-coq/BoolServRaftLogCorrect.v
-coq/BoolServRaftSerialized.v
-coq/BoolServRaftSerializedCorrect.v
-coq/BoolServRaftSerializedLog.v
-coq/BoolServRaftSerializedLogCorrect.v
 coq/ExtractBoolServRaft.v
