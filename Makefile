@@ -11,3 +11,4 @@ Makefile.coq:
 
 clean: Makefile.coq
 	$(MAKE) -f Makefile.coq clean
+	rm -rf _build boolserv.native
