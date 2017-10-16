@@ -4,10 +4,19 @@ BoolServ
 技術書典3で頒布する進捗大陸02で作る分散システムのソースコード。
 `true` または `false` のどちらかを保存する状態機械を Raft で複製させたシステムです。
 
+Prerequisite
+------------
+
+- Coq 8.6 (installed by opam)
+- opam
+
 Compilation
 -----------
 
 ```
+opam repo add coq-released https://coq.inria.fr/opam/released
+opam repo add distributedcomponents-dev http://opam-dev.distributedcomponents.net
+opam install verdi verdi-raft verdi-runtime
 make
 ```
 
